@@ -19,5 +19,6 @@
     <color name="black">#040303</color>
     <color name="lightGreen">#e5ffcc</color>
     <color name="settingsIconColor">#0E8374</color>
+    <color name="chatBackground">#BCBCBC</color>
     <color name="greyBackground">#BCBCBC</color>
 </resources>
