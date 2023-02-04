@@ -54,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
 
+            case R.id.groupChat:
+                Intent intentt = new Intent(MainActivity.this, GroupChatActivity.class);
+                startActivity(intentt);
+                break;
+
         }
 
         return true;
