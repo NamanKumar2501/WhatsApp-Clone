@@ -12,6 +12,7 @@
         <entry key="..\:/WhatsAppClone/app/src/main/res/drawable/ic_baseline_call_24.xml" value="0.123" />
         <entry key="..\:/WhatsAppClone/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.11" />
         <entry key="..\:/WhatsAppClone/app/src/main/res/drawable/ic_video_call.xml" value="0.123" />
+        <entry key="..\:/WhatsAppClone/app/src/main/res/drawable/linear_bg.xml" value="0.1" />
         <entry key="..\:/WhatsAppClone/app/src/main/res/drawable/send.xml" value="0.1" />
         <entry key="..\:/WhatsAppClone/app/src/main/res/drawable/three_doats_24.xml" value="0.123" />
         <entry key="..\:/WhatsAppClone/app/src/main/res/drawable/user.xml" value="0.108" />
@@ -19,7 +20,7 @@
         <entry key="..\:/WhatsAppClone/app/src/main/res/layout/activity_chat_detail.xml" value="0.2277992277992278" />
         <entry key="..\:/WhatsAppClone/app/src/main/res/layout/activity_group_chat.xml" value="0.20833333333333334" />
         <entry key="..\:/WhatsAppClone/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/WhatsAppClone/app/src/main/res/layout/activity_setting.xml" value="0.16" />
+        <entry key="..\:/WhatsAppClone/app/src/main/res/layout/activity_setting.xml" value="0.2" />
         <entry key="..\:/WhatsAppClone/app/src/main/res/layout/activity_sign_in.xml" value="0.20416666666666666" />
         <entry key="..\:/WhatsAppClone/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
         <entry key="..\:/WhatsAppClone/app/src/main/res/layout/fragment_chats.xml" value="0.22" />
