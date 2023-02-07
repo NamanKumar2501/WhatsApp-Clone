@@ -57,13 +57,16 @@ import java.util.Date;
             }
         });
 
+
+
         final ArrayList<MessageModel> messageModels = new ArrayList<>();
-        final ChatAdapter chatAdapter = new ChatAdapter(messageModels, this);
+        final ChatAdapter chatAdapter = new ChatAdapter(messageModels, this, recieveId);
 
         binding.chatRecyclerView.setAdapter(chatAdapter);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         binding.chatRecyclerView.setLayoutManager(layoutManager);
+
 
 
         final  String senderRoom = senderId + recieveId;
@@ -78,6 +81,8 @@ import java.util.Date;
                                 for (DataSnapshot snapshot1 : snapshot.getChildren()){
                                     MessageModel model = snapshot1.getValue(MessageModel.class);
 
+                                    model.setMessageId(snapshot1.getKey());
+
                                     messageModels.add(model);
                                 }
                                 chatAdapter.notifyDataSetChanged();
@@ -91,12 +96,11 @@ import java.util.Date;
 
 
 
-
         binding.send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-             String message = binding.etMessage.getText().toString();
+                String message = binding.etMessage.getText().toString();
              final  MessageModel model = new MessageModel(senderId , message);
              model.setTimestamp(new Date().getTime());
              binding.etMessage.setText("");

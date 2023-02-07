@@ -60,7 +60,12 @@ public class GroupChatActivity extends AppCompatActivity {
                                 messageModels.clear();
                                 for (DataSnapshot dataSnapshot : snapshot.getChildren()){
                                     MessageModel model = dataSnapshot.getValue(MessageModel.class);
+
+                                    model.setMessageId(snapshot.getKey());
+
                                     messageModels.add(model);
+
+
                                 }
                                 adapter.notifyDataSetChanged();
                             }
